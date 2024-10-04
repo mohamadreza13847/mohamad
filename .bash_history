@@ -92,3 +92,45 @@ ls -a
 ls
 rm -r snap/
 ls
+git stash
+git status
+touch 1.txt
+git status
+git stash
+git status
+git add 1.txt
+git status
+git commit -m "2"
+git status
+git log
+git status
+git stash
+git status
+git stash list
+git stash drop stash@{0}
+git stash list
+git status
+git branch -a
+git status
+git stash save "commit 5"
+git stash list
+git checkout develop
+git status
+git stash list
+git status
+git checkout master
+git add .
+git checkout master
+git commit -m "6"
+
+git status
+git checkout develop
+git status
+git stash list
+git status
+git stash
+git status
+git stash list
+git checkout master
+git stash show stash@{1}
+git stash show -p stash@{1}
